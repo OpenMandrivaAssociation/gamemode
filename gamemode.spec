@@ -11,7 +11,7 @@ BuildRequires: asciidoc
 BuildRequires: meson
 BuildRequires: pkgconfig(systemd)
 BuildRequires: pkgconfig(libsystemd)
-BuildRequires: polkit-devel
+#BuildRequires: polkit-devel
 BuildRequires: systemd
 
 %description
