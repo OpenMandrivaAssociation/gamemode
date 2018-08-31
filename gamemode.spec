@@ -53,7 +53,7 @@ Files for development with %{name}.
 %{_datadir}/dbus-1/services/com.feralinteractive.GameMode.service
 %{_libdir}/libgamemode*.so.*
 #{_libdir}/systemd/user/gamemoded.service
-%{_userunitdir}/user/gamemoded.service
+%{_userunitdir}/gamemoded.service
 %{_mandir}/man8/gamemoded.8*
 
 %files devel
