@@ -25,6 +25,13 @@ is now able to launch custom user defined plugins, and is intended
 to be expanded further, as there are a wealth of automation tasks
 one might want to apply.
 
+HOW TO USE:
+After installing libgamemodeauto.so.0 simply preload it into the game:
+LD_PRELOAD=/usr/\$LIB/libgamemodeauto.so.0 ./game
+Or edit the steam launch options:
+LD_PRELOAD=$LD_PRELOAD:/usr/\$LIB/libgamemodeauto.so.0 %command%
+Please note the backslash here in \$LIB is required.
+
 %package devel
 Summary: Development package for %{name}
 Requires: %{name}%{?_isa} = %{version}-%{release}
@@ -62,24 +69,3 @@ Files for development with %{name}.
 %{_includedir}/gamemode_client.h
 %{_libdir}/libgamemode*.so
 %{_libdir}/pkgconfig/gamemode*.pc
-
-
-%changelog
-* Mon Jul 23 2018 Christian Kellner <christian@kellner.me> - 1.2-1
-- New upstream release
-  Resolves: #1607099
-- Drop all patches (all upstreamed)
-
-* Fri Jul 13 2018 Fedora Release Engineering <releng@fedoraproject.org> - 1.1-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
-
-* Thu Jun 28 2018 Christian Kellner <christian@kellner.me>  - 1.1-1
-- Initial package
-  Resolves: #1596293
-- Patch to move manpage to section 8
-  Upstream commit 28fcb09413bbf95507788024b98b675cbf656f6c
-- Patch for dbus auto-activation
-  Merged PR https://github.com/FeralInteractive/gamemode/pull/62
-- Patch for proper library versioning
-  Merged PR https://github.com/FeralInteractive/gamemode/pull/63
-
