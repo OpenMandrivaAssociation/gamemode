@@ -1,3 +1,5 @@
+%define _userunitdir /usr/lib/systemd/user/
+
 Name:		gamemode
 Version:	1.2
 Release:	1
