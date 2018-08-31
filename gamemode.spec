@@ -43,7 +43,6 @@ Files for development with %{name}.
 %install
 %meson_install
 
-%ldconfig_scriptlets
 
 %files
 %license LICENSE.txt
