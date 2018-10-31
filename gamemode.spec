@@ -2,7 +2,7 @@
 
 Name:		gamemode
 Version:	1.2
-Release:	1
+Release:	2
 Summary:	Optimize system performance for games on demand
 License:	BSD
 URL:		https://github.com/FeralInteractive/gamemode
