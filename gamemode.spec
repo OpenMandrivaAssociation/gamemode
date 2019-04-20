@@ -1,3 +1,4 @@
+%define major   0
 %define _userunitdir /usr/lib/systemd/user/
 
 %define libname %mklibname %{name} %{major}
@@ -70,7 +71,9 @@ Files for development with %{name}.
 %license LICENSE.txt
 %doc	 README.md
 %{_bindir}/gamemoded
+%{_bindir}/gamemoderun
 %{_libexecdir}/cpugovctl
+%{_libexecdir}/gpuclockctl
 %{_datadir}/polkit-1/actions/com.feralinteractive.GameMode.policy
 %{_datadir}/dbus-1/services/com.feralinteractive.GameMode.service
 #{_libdir}/libgamemode*.so.*
