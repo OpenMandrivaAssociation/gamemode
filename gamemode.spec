@@ -5,7 +5,7 @@
 %define devname %mklibname %{name} -d
 
 Name:		gamemode
-Version:	1.4
+Version:	1.5
 Release:	1
 Summary:	Optimize system performance for games on demand
 License:	BSD
