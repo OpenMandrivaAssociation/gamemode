@@ -80,7 +80,7 @@ Files for development with %{name}.
 #{_libdir}/libgamemode*.so.*
 #{_libdir}/systemd/user/gamemoded.service
 %{_userunitdir}/gamemoded.service
-%{_mandir}/man8/gamemoded.8*
+#{_mandir}/man8/gamemoded.8*
 
 %files -n %{libname}
 %{_libdir}/lib%{name}.so*
