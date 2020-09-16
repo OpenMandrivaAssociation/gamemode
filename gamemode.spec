@@ -73,14 +73,17 @@ Files for development with %{name}.
 %doc	 README.md
 %{_bindir}/gamemoded
 %{_bindir}/gamemoderun
+%{_bindir}/gamemode-simulate-game
 %{_libexecdir}/cpugovctl
 %{_libexecdir}/gpuclockctl
 %{_datadir}/polkit-1/actions/com.feralinteractive.GameMode.policy
 %{_datadir}/dbus-1/services/com.feralinteractive.GameMode.service
-#{_libdir}/libgamemode*.so.*
-#{_libdir}/systemd/user/gamemoded.service
+%{_datadir}/gamemode/gamemode.ini
+%{_datadir}/metainfo/io.github.feralinteractive.gamemode.metainfo.xml
 %{_userunitdir}/gamemoded.service
-#{_mandir}/man8/gamemoded.8*
+%{_mandir}/gamemoded.8*
+%{_mandir}/gamemoderun.1
+%{_mandir}/gamemode-simulate-game.1
 
 %files -n %{libname}
 %{_libdir}/lib%{name}.so*
@@ -89,4 +92,6 @@ Files for development with %{name}.
 %files devel
 %{_includedir}/gamemode_client.h
 %{_libdir}/libgamemode*.so
+%{_libdir}/libgamemodeauto.a
+%{_libdir}/pkgconfig/libgamemodeauto.pc
 %{_libdir}/pkgconfig/gamemode*.pc
