@@ -81,9 +81,9 @@ Files for development with %{name}.
 %{_datadir}/gamemode/gamemode.ini
 %{_datadir}/metainfo/io.github.feralinteractive.gamemode.metainfo.xml
 %{_userunitdir}/gamemoded.service
-%{_mandir}/gamemoded.8*
-%{_mandir}/gamemoderun.1
-%{_mandir}/gamemode-simulate-game.1
+#{_mandir}/gamemoded.8*
+#{_mandir}/gamemoderun.1
+#{_mandir}/gamemode-simulate-game.1
 
 %files -n %{libname}
 %{_libdir}/lib%{name}.so*
