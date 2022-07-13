@@ -81,17 +81,25 @@ Files for development with %{name}.
 %{_datadir}/gamemode/gamemode.ini
 %{_datadir}/metainfo/io.github.feralinteractive.gamemode.metainfo.xml
 %{_userunitdir}/gamemoded.service
-#{_mandir}/gamemoded.8*
-#{_mandir}/gamemoderun.1
-#{_mandir}/gamemode-simulate-game.1
+%{_mandir}/man1/gamemode-simulate-game.1.*
+%{_mandir}/man1/gamemoderun.1.*
+%{_mandir}/man8/gamemoded.8.*
 
 %files -n %{libname}
 %{_libdir}/lib%{name}.so*
 %{_libdir}/lib%{name}auto.so*
+%{_libdir}/libINIReader.so*
+%{_libdir}/libinih.so*
 
 %files devel
 %{_includedir}/gamemode_client.h
+%{_includedir}/INIReader.h
+%{_includedir}/ini.h
 %{_libdir}/libgamemode*.so
+%{_libdir}/libINIReader.so
+%{_libdir}/libinih.so
 %{_libdir}/libgamemodeauto.a
 %{_libdir}/pkgconfig/libgamemodeauto.pc
 %{_libdir}/pkgconfig/gamemode*.pc
+%{_libdir}/pkgconfig/INIReader.pc
+%{_libdir}/pkgconfig/inih.pc
