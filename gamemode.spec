@@ -86,7 +86,7 @@ Files for development with %{name}.
 %{_prefix}/lib/sysusers.d/gamemode.conf
 %{_mandir}/man1/gamemode-simulate-game.1.*
 %{_mandir}/man1/gamemoderun.1.*
-%{_mandir}/man1/gamemodelist.1.zst
+%{_mandir}/man1/gamemodelist.1.*
 %{_mandir}/man8/gamemoded.8.*
 
 %files -n %{libname}
