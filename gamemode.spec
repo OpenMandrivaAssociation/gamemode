@@ -89,8 +89,6 @@ Files for development with %{name}.
 %files -n %{libname}
 %{_libdir}/lib%{name}.so*
 %{_libdir}/lib%{name}auto.so*
-%{_libdir}/libINIReader.so*
-%{_libdir}/libinih.so*
 
 %files devel
 %{_includedir}/gamemode_client.h
