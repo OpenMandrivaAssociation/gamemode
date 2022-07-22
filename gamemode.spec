@@ -18,6 +18,7 @@ BuildRequires: meson
 BuildRequires: pkgconfig(dbus-1)
 BuildRequires: pkgconfig(systemd)
 BuildRequires: pkgconfig(libsystemd)
+BuildRequires: pkgconfig(inih)
 #BuildRequires: polkit-devel
 BuildRequires: systemd
 
