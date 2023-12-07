@@ -68,7 +68,6 @@ Files for development with %{name}.
 %install
 %meson_install
 
-
 %files
 %license LICENSE.txt
 %doc	 README.md
@@ -96,6 +95,6 @@ Files for development with %{name}.
 %files devel
 %{_includedir}/gamemode_client.h
 %{_libdir}/libgamemode*.so
-%{_libdir}/libgamemodeauto.a
+#{_libdir}/libgamemodeauto.a
 %{_libdir}/pkgconfig/libgamemodeauto.pc
 %{_libdir}/pkgconfig/gamemode*.pc
