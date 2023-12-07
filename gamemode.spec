@@ -77,7 +77,11 @@ Files for development with %{name}.
 %{_bindir}/gamemodelist
 %{_libexecdir}/cpugovctl
 %{_libexecdir}/gpuclockctl
+%{_libexecdir}/procsysctl
+%{_libexecdir}/cpucorectl
+%{_sysconfdir}/security/limits.d/10-%{name}.conf
 %{_datadir}/polkit-1/actions/com.feralinteractive.GameMode.policy
+%{_datadir}/polkit-1/rules.d/%{name}.rules
 %{_datadir}/dbus-1/services/com.feralinteractive.GameMode.service
 %{_datadir}/gamemode/gamemode.ini
 %{_datadir}/metainfo/io.github.feralinteractive.gamemode.metainfo.xml
