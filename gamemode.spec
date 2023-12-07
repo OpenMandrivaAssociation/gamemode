@@ -5,8 +5,8 @@
 %define devname %mklibname %{name} -d
 
 Name:		gamemode
-Version:	1.7
-Release:	2
+Version:	1.8
+Release:	1
 Summary:	Optimize system performance for games on demand
 License:	BSD
 URL:		https://github.com/FeralInteractive/gamemode
