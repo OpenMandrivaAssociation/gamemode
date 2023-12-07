@@ -5,8 +5,8 @@
 %define devname %mklibname %{name} -d
 
 Name:		gamemode
-Version:	1.7
-Release:	2
+Version:	1.8
+Release:	1
 Summary:	Optimize system performance for games on demand
 License:	BSD
 URL:		https://github.com/FeralInteractive/gamemode
@@ -68,7 +68,6 @@ Files for development with %{name}.
 %install
 %meson_install
 
-
 %files
 %license LICENSE.txt
 %doc	 README.md
@@ -78,7 +77,11 @@ Files for development with %{name}.
 %{_bindir}/gamemodelist
 %{_libexecdir}/cpugovctl
 %{_libexecdir}/gpuclockctl
+%{_libexecdir}/procsysctl
+%{_libexecdir}/cpucorectl
+%{_sysconfdir}/security/limits.d/10-%{name}.conf
 %{_datadir}/polkit-1/actions/com.feralinteractive.GameMode.policy
+%{_datadir}/polkit-1/rules.d/%{name}.rules
 %{_datadir}/dbus-1/services/com.feralinteractive.GameMode.service
 %{_datadir}/gamemode/gamemode.ini
 %{_datadir}/metainfo/io.github.feralinteractive.gamemode.metainfo.xml
@@ -96,6 +99,6 @@ Files for development with %{name}.
 %files devel
 %{_includedir}/gamemode_client.h
 %{_libdir}/libgamemode*.so
-%{_libdir}/libgamemodeauto.a
+#{_libdir}/libgamemodeauto.a
 %{_libdir}/pkgconfig/libgamemodeauto.pc
 %{_libdir}/pkgconfig/gamemode*.pc
