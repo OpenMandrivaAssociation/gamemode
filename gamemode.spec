@@ -5,7 +5,7 @@
 %define devname %mklibname %{name} -d
 
 Name:		gamemode
-Version:	1.8.1
+Version:	1.8.2
 Release:	1
 Summary:	Optimize system performance for games on demand
 License:	BSD
@@ -19,7 +19,7 @@ BuildRequires: pkgconfig(dbus-1)
 BuildRequires: pkgconfig(systemd)
 BuildRequires: pkgconfig(libsystemd)
 BuildRequires: pkgconfig(inih)
-#BuildRequires: polkit-devel
+BuildRequires: polkit-devel
 BuildRequires: systemd
 
 Requires:       %{libname} = %{version}-%{release}
