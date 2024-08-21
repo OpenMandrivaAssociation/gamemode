@@ -19,7 +19,7 @@ BuildRequires: pkgconfig(dbus-1)
 BuildRequires: pkgconfig(systemd)
 BuildRequires: pkgconfig(libsystemd)
 BuildRequires: pkgconfig(inih)
-BuildRequires: polkit-devel
+BuildRequires: pkgconfig(polkit-gobject-1)
 BuildRequires: systemd
 
 Requires:       %{libname} = %{version}-%{release}
